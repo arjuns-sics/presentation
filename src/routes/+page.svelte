@@ -111,4 +111,79 @@
 			class="scale-150 object-contain"
 		/>
 	</Slide>
+	<!-- text formatting elements -->
+	<Slide class="h-full place-content-center place-items-start px-16 text-start">
+		<Transition>
+			<p
+				class="max-w -prose
+			mt-8 text-3xl"
+			>
+				HTML provides a number of elements that help you to structure text in a document.
+			</p>
+		</Transition>
+	</Slide>
+	<Slide class="h-full place-content-center place-items-start px-16 text-start">
+		<div class="flex flex-col">
+			<Transition class="flex items-center justify-between gap-5">
+				<Code lang="html" code={`<h1>Heading level 1</h1>`} />
+				<h1 class="w-full">Heading level 1</h1>
+			</Transition>
+			<Transition class="flex items-center gap-5">
+				<Code lang="html" code={`<h2>Heading level 2</h2>`} />
+				<h2 class="w-full">Heading level 2</h2>
+			</Transition>
+			<Transition class="flex items-center gap-5">
+				<Code lang="html" code={`<h3>Heading level 3</h3>`} />
+				<h3 class="w-full">Heading level 3</h3>
+			</Transition>
+			<Transition class="flex items-center gap-5">
+				<Code lang="html" code={`<h4>Heading level 4</h4>`} />
+				<h4 class="w-full">Heading level 4</h4>
+			</Transition>
+			<Transition class="flex items-center gap-5">
+				<Code lang="html" code={`<h5>Heading level 5</h5>`} />
+				<h5 class="w-full">Heading level 5</h5>
+			</Transition>
+			<Transition class="flex items-center gap-5">
+				<Code lang="html" code={`<h6>Heading level 6</h6>`} />
+				<h6 class="w-full">Heading level 6</h6>
+			</Transition>
+		</div>
+	</Slide>
+	<Slide class="h-full place-content-center place-items-start px-16 text-start">
+		<div class="flex flex-col">
+			<Transition class="flex items-center gap-5 text-end">
+				<Code lang="html" code={`<p>Paragraph</p>`} />
+				<p class="w-full">Paragraph</p>
+			</Transition>
+			<Transition class="flex items-center gap-5 text-end">
+				<Code lang="html" code={`<strong>Strong</strong>`} />
+				<strong class="w-full">Strong</strong>
+			</Transition>
+			<Transition class="flex items-center gap-5 text-end">
+				<Code lang="html" code={`<em>Emphasis</em>`} />
+				<em class="w-full">Emphasis</em>
+			</Transition>
+			<Transition class="flex items-center gap-16 text-end">
+				<Code lang="html" code={`<mark>Marked</mark>`} />
+				<mark>Marked</mark>
+			</Transition>
+			<Transition class="flex items-center gap-5 text-end">
+				<Code lang="html" code={`<del>Deleted</del>`} />
+				<del class="w-full">Deleted</del>
+			</Transition>
+			<Transition class="flex items-center gap-5 text-end">
+				<Code lang="html" code={`<ins>Inserted</ins>`} />
+				<ins class="w-full">Inserted</ins>
+			</Transition>
+			<Transition class="flex items-center gap-5 text-end ">
+				<Code lang="html" code={`<sub>Subscript</sub>`} />
+				<p class="w-full text-2xl">this is <sub>Subscript</sub></p>
+			</Transition>
+			<Transition class="flex items-center gap-5 text-end">
+				<Code lang="html" code={`<sup>Superscript</sup>`} />
+				<p class="w-full text-2xl">this is <sup>Superscript</sup></p>
+			</Transition>
+		</div>
+	</Slide>
 </Presentation>

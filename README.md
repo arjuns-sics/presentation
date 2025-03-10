@@ -7,7 +7,7 @@
 - [x] **Overview of HTML**
   - Structure of an HTML document
   - Commonly used HTML tags (e.g., `<html>`, `<head>`, `<body>`)
-- [ ] **Text Formatting Elements**
+- [x] **Text Formatting Elements**
   - Introduction to text formatting tags (e.g., `<b>`, `<i>`, `<u>`, `<strong>`, `<em>`)
   - Usage examples and demonstration
 - [ ] **Create Slides for HTML Topic**
