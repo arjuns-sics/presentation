@@ -10,17 +10,17 @@
 - [x] **Text Formatting Elements**
   - Introduction to text formatting tags (e.g., `<b>`, `<i>`, `<u>`, `<strong>`, `<em>`)
   - Usage examples and demonstration
-- [ ] **Create Slides for HTML Topic**
+- [x] **Create Slides for HTML Topic**
   - Overview of HTML
   - Examples of text formatting
 
 ### React - Hooks
 
-- [ ] **Demonstrate React Hooks**
+- [x] **Demonstrate React Hooks**
   - How to use hooks in functional components
   - Example of `useState` and `useEffect` with code snippets
   - Explanation of their purpose and benefits in React development
-- [ ] **Create Slides for React Topic**
+- [x] **Create Slides for React Topic**
   - Introduction to React Hooks
   - Code examples and explanations
 

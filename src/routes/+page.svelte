@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Presentation, Slide, Code, Transition, Action } from '@animotion/core'
 	let htmltext: HTMLHeadingElement
+	let htmltext_2: HTMLHeadingElement
 	let code: ReturnType<typeof Code>
 	let htmlstructure: ReturnType<typeof Code>
 </script>
@@ -50,7 +51,7 @@
 	</Slide>
 	<Slide class="h-full place-content-center place-items-start px-16 text-start">
 		<Transition>
-			<p bind:this={htmltext} class="mt-8 text-4xl">
+			<p bind:this={htmltext_2} class="mt-8 text-4xl">
 				You can put other elements inside an element.
 			</p>
 		</Transition>
@@ -60,7 +61,7 @@
 		<Action
 			do={() => {
 				code.update`<p>My cat is <strong>very grumpy.</p></strong>`
-				htmltext.innerHTML =
+				htmltext_2.innerHTML =
 					"You can't put elements in the wrong order. ❌ <br/> Last opened element should be closed first."
 			}}
 		/>
