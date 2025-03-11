@@ -55,7 +55,10 @@
 				You can put other elements inside an element.
 			</p>
 		</Transition>
-		<Transition class="mx-auto mt-8 max-w-prose">
+		<Transition
+			class="mx-auto mt-8 max-w-prose"
+			do={() => code.update`<p>My cat is <strong>very grumpy.</strong></p>`}
+		>
 			<Code bind:this={code} lang="html" code={`<p>My cat is <strong>very</strong> grumpy.</p>`} />
 		</Transition>
 		<Action
@@ -155,7 +158,7 @@
 		<div class="flex flex-col">
 			<Transition class="flex items-center gap-5 text-end">
 				<Code lang="html" code={`<p>Paragraph</p>`} />
-				<p class="w-full">Paragraph</p>
+				<p class="w-full text-4xl">Paragraph</p>
 			</Transition>
 			<Transition class="flex items-center gap-5 text-end">
 				<Code lang="html" code={`<strong>Strong</strong>`} />
@@ -178,13 +181,23 @@
 				<ins class="w-full">Inserted</ins>
 			</Transition>
 			<Transition class="flex items-center gap-5 text-end ">
-				<Code lang="html" code={`<sub>Subscript</sub>`} />
-				<p class="w-full text-2xl">this is <sub>Subscript</sub></p>
+				<Code lang="html" code={`<p>log<sub>e</sub></p>`} />
+				<p class="w-full text-4xl">log<sub>e</sub></p>
 			</Transition>
 			<Transition class="flex items-center gap-5 text-end">
-				<Code lang="html" code={`<sup>Superscript</sup>`} />
-				<p class="w-full text-2xl">this is <sup>Superscript</sup></p>
+				<Code lang="html" code={`<p>10<sup>5</sup></p>`} />
+				<p class="w-full text-4xl">10<sup>5</sup></p>
 			</Transition>
 		</div>
+	</Slide>
+	<Slide class="h-full place-content-center place-items-center px-16 text-start">
+		<h1 class="mb-16 text-6xl font-bold">Next topic: React</h1>
+		<a href="/react">
+			<img
+				src="https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=256"
+				alt="html element"
+				class="scale-125 object-contain"
+			/>
+		</a>
 	</Slide>
 </Presentation>

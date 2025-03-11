@@ -31,13 +31,9 @@
 			<Code
 				lang="js"
 				bind:this={code}
-				code={`const fs = require('fs');
-
-// Read a file asynchronously
-fs.readFile('example.txt', 'utf8', (err, data) => {
-  if (err) throw err;
-  console.log(data);
-});`}
+				code={`const fs = require('fs'); // CommonJS
+/* OR */
+import fs from 'fs'; // ESM`}
 			/>
 		</Transition>
 	</Slide>
@@ -145,23 +141,33 @@ console.log(data);`}
 			/>
 		</Transition>
 		<Transition class="mx-auto mt-8 max-w-prose">
+			<Code
+				lang="js"
+				code={`const fs = require('fs');
+
+// async read
+fs.readFile('example.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+console.log('File read happens asynchronously'); // logs before file is read`}
+			/>
+		</Transition>
+		<Transition class="mx-auto mt-8 max-w-prose">
 			<p>
 				While `fs.readFileSync()` blocks the execution until the file is read, `fs.readFile()`
 				allows other tasks to run while the file is being read.
 			</p>
 		</Transition>
 	</Slide>
-	<Slide class="h-full place-content-center place-items-start px-16 text-start">
-		<h1 class="text-8xl font-bold">File Operations: Creating and Deleting</h1>
-	</Slide>
-	<Slide class="h-full place-content-center place-items-start px-16 text-start">
-		<h1 class="text-8xl font-bold">Conclusion</h1>
-	</Slide>
-	<Slide class="h-full place-content-center place-items-start px-16 text-start">
-		<p>
-			The fs module in Node.js provides powerful tools to work with the file system, both
-			asynchronously and synchronously. Understanding how to read, write, and manipulate files is
-			fundamental for working with file-based data in Node.js.
-		</p>
+	<Slide class="h-full place-content-center place-items-center px-16 text-start">
+		<h1 class="mb-16 text-6xl font-bold">Next topic: MongoDB</h1>
+		<a href="/mongo">
+			<img
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png"
+				alt="html element"
+				class="scale-75 bg-gray-300 object-contain p-12"
+			/>
+		</a>
 	</Slide>
 </Presentation>

@@ -20,14 +20,19 @@
 				scalability and performance by allowing a schema-less design.
 			</p>
 		</Transition>
-		<Transition class="mx-auto mt-8 max-w-prose">
+		<Transition class="mx-auto mt-8">
 			<Code
-				lang="js"
-				code={`const { MongoClient } = require('mongodb');
-const uri = "your-mongodb-uri";
-const client = new MongoClient(uri);
-await client.connect();
-const db = client.db('myDatabase');`}
+				lang="json"
+				code={`{
+  "_id": "1234567890",
+  "name": "John Doe",
+  "age": 30,
+  "address": {
+    "street": "123 Main St",
+    "city": "New York",
+    "state": "NY"
+  }
+}`}
 			/>
 		</Transition>
 	</Slide>
@@ -128,10 +133,10 @@ db.collection('checkins').updateOne({
 			}}
 		/>
 	</Slide>
-	<Slide class="h-full place-content-center place-items-center text-xs">
+	<Slide class="h-full place-content-center place-items-center ">
 		<h1 class=" font-bold">Conclusion</h1>
 		<Transition class="px-8 ">
-			<p class="text-xs">
+			<p class="text-base">
 				MongoDB offers a modern, scalable approach to data storage by providing flexible schemas and
 				high performance. Its design empowers developers to build innovative solutions that
 				efficiently handle vast amounts of data.

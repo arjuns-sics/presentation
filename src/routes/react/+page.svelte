@@ -1,5 +1,4 @@
 <script lang="ts">
-	export const prerender = false
 	import { Presentation, Slide, Code, Transition, Action } from '@animotion/core'
 	import { ShoppingCart } from '@lucide/svelte'
 
@@ -182,6 +181,7 @@ function Example1() {
 		/>
 		<Action
 			do={() => {
+				code_3.selectLines`*`
 				code_3.update`import React, { useState, useEffect } from 'react';
 
 function Example2() {
@@ -227,5 +227,15 @@ function Example3() {
 }`
 			}}
 		/>
+	</Slide>
+	<Slide class="h-full place-content-center place-items-center px-16 text-center">
+		<h1 class="mb-16 text-6xl font-bold">Next topic: Node JS (FS)</h1>
+		<a href="/node">
+			<img
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+				alt="html element"
+				class="mx-auto w-1/2 rounded-lg bg-gray-300 object-contain p-4"
+			/>
+		</a>
 	</Slide>
 </Presentation>
