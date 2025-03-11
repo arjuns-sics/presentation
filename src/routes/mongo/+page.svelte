@@ -136,7 +136,7 @@ db.collection('checkins').updateOne({
 	<Slide class="h-full place-content-center place-items-center ">
 		<h1 class=" font-bold">Conclusion</h1>
 		<Transition class="px-8 ">
-			<p class="text-base">
+			<p class="mt-8 max-w-prose text-2xl">
 				MongoDB offers a modern, scalable approach to data storage by providing flexible schemas and
 				high performance. Its design empowers developers to build innovative solutions that
 				efficiently handle vast amounts of data.
