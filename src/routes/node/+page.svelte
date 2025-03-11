@@ -1,5 +1,4 @@
 <script lang="ts">
-	export const prerender = false
 	import { Presentation, Slide, Code, Transition, Action } from '@animotion/core'
 	import { FileText } from '@lucide/svelte'
 
@@ -162,7 +161,7 @@ console.log('File read happens asynchronously'); // logs before file is read`}
 	</Slide>
 	<Slide class="h-full place-content-center place-items-center px-16 text-start">
 		<h1 class="mb-16 text-6xl font-bold">Next topic: MongoDB</h1>
-		<a href="/mongo">
+		<a href="https://arjuns-sics.github.io/presentation/mongo">
 			<img
 				src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png"
 				alt="html element"

@@ -230,7 +230,7 @@ function Example3() {
 	</Slide>
 	<Slide class="h-full place-content-center place-items-center px-16 text-center">
 		<h1 class="mb-16 text-6xl font-bold">Next topic: Node JS (FS)</h1>
-		<a href="/node">
+		<a href="https://arjuns-sics.github.io/presentation/node">
 			<img
 				src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
 				alt="html element"

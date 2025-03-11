@@ -192,7 +192,7 @@
 	</Slide>
 	<Slide class="h-full place-content-center place-items-center px-16 text-start">
 		<h1 class="mb-16 text-6xl font-bold">Next topic: React</h1>
-		<a href="/react">
+		<a href="https://arjuns-sics.github.io/presentation/react">
 			<img
 				src="https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=256"
 				alt="html element"
