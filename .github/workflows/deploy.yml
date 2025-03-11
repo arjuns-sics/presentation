@@ -20,22 +20,21 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-            node-version: 20
-            cache: npm
+          node-version: 20
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
-      - name: build
+      - name: Build
         env:
-            BASE_PATH: '/${{ github.event.repository.name }}'
-        run: |
-        npm run build
+          BASE_PATH: "/${{ github.event.repository.name }}"
+        run: npm run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-            path: 'build/'
+          path: 'build/'
 
   deploy:
     needs: build_site
@@ -53,3 +52,6 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # Specify the path to your build directory (you may need to adjust if not 'build/')
+          artifact-path: 'build/'
