@@ -19,7 +19,16 @@
 		<h1 class="text-8xl font-bold">What are React Components?</h1>
 	</Slide>
 	<Slide class="h-full place-content-center place-items-start px-16 text-start">
-		<Transition class="mx-auto mt-8 max-w-prose">
+		<Transition
+			class="mx-auto mt-8 max-w-prose"
+			do={code.update`function App() {
+  return (
+    <div className="App">
+      <h1>Hello World!</h1>
+    </div>
+  );
+}`}
+		>
 			<Code
 				lang="html"
 				bind:this={code}
@@ -33,7 +42,7 @@
 			/>
 		</Transition>
 		<Transition class="mx-auto mt-8 max-w-prose">
-			<Code bind:this={componentcode} lang="html" code={`<App/>	`} />
+			<Code bind:this={componentcode} lang="jsx" code={`<App/>`} />
 		</Transition>
 		<Transition class="mx-auto mt-8 max-w-prose">
 			<div class="border-2 border-black p-4">
