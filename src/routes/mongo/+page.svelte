@@ -143,4 +143,13 @@ db.collection('checkins').updateOne({
 			</p>
 		</Transition>
 	</Slide>
+	<Slide class="h-full place-content-center place-items-center px-16 text-center">
+		<h1 class="mb-16 text-6xl font-bold">What we have learnt</h1>
+		<ul class="ml-8 list-disc text-2xl">
+			<li>HTML and text formatting elements</li>
+			<li>React components and hooks</li>
+			<li>What is the fs module in Node?</li>
+			<li>An intro to MongoDB</li>
+		</ul>
+	</Slide>
 </Presentation>
