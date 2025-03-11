@@ -1,4 +1,5 @@
 <script lang="ts">
+	// export const ssr = false
 	import '../styles/app.css'
 
 	let { children } = $props()

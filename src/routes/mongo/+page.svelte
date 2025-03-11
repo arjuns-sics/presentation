@@ -1,5 +1,4 @@
 <script lang="ts">
-	export const prerender = false
 	import { Presentation, Slide, Code, Transition, Action } from '@animotion/core'
 	let code: ReturnType<typeof Code>
 </script>
